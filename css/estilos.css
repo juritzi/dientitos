@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FUENTES
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* ESTILOS DE LA BARRA DE NAVEGACIÓN */
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+*{
+    font-family: 'Montserrat';
+}
+
+#barra-principal-blanca{
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 5px 18px #888888;
+    font-size: 16px;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #1A3B6D;
+}
+
+.nav-link:active{
+    color: #1A3B6D;
+}
+
+.nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #FEDEDC !important
+}
+
+#logo {
+    width: 70px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #1A3B6D;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #1A3B6D;
+    font-weight: bold;
+}
+
+.active{
+    background-color: #1A3B6D;
+    border-radius: 5px;
+    color: #FEDEDC;
+    font-weight: 500;
+}
+
+.active:hover{
+    color: #FEDEDC;
+    font-weight: 600;
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+
+#myCarousel-indicators button{
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: transparent;
+    border: 2px solid #FEDEDC;
+}
+
+.carousel-indicators .active{
+    background-color: #FEDEDC !important;
+}
+
+@font-face {
+    font-family: 'DKLemonYellowSun' ;
+    src: url('fonts/DKLemonYellowSun.otf');
+}
+
+
+#fontcarousel1{
+    font-family: 'DKLemonYellowSun';   
+    display: flex;
+    align-self: baseline;
+    justify-content: flex-end;
+    color: black;
+    height: 400px;
+}
+
+#fontcarousel2{
+    font-family: 'DKLemonYellowSun';
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: #FEDEDC;
+    align-content: center;
+    height: 400px;
+
+    
+}
+#fontcarousel3{
+    font-family: 'DKLemonYellowSun';
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: black;
+    height: 400px;
+
+}
+
+
+/* ESTILOS DE LAS SECCIONES */
+
+.seccion{
+    height: 100vh;
+    padding: 60px;
+}
+
+.seccion h2{
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #1A3B6D;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+/* SECCION DE NOSOTROS */
+
+#nosotros{
+    padding: 0px;
+    padding-bottom: 60px;
+    height: fit-content;
+}
+
+#header-nosotros{
+    color: #C3ECEC;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#nosotros-contenido{
+    display: flex;
+}
+
+#nosotros-imagenes{
+    width: 55%;
+    align-items: stretch;
+    background-image: url("../img/dentista-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    animation: changeBg 8s infinite
+}
+
+@keyframes changeBg{
+   0%  {background-image: url("../img/dentista-1.png");}
+   20%  {background-image: url("../img/dentista-1.png");}
+   40% {background-image: url("../img/dentista-2.png");}
+   60% {background-image: url("../img/dentista-2.png");}
+   80% {background-image: url("../img/dentista-3.png");}
+   95% {background-image: url("../img/dentista-3.png");}
+   100%  {background-image: url("../img/dentista-1.png");}
+
+}
+
+.nosotros-texto{
+    background-color: #1A3B6D;
+    font-size: 16px;
+    color: #C3ECEC;
+    padding: 50px;
+    width: 45%;
+    align-self: stretch;
+}
+
+.nosotros-texto p{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#container-hadita{
+    width: 10%;
+    position:fixed;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    bottom:0;
+    right:0;
+    visibility: hidden;
+}
+
+#container-hadita img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* SECCION DE TESTIMONIOS */
+#header-testimonios{
+    padding-top: 60px;
+}
+
+#testimonios-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.testimonio{
+    background-color: #C3ECEC;
+    border-radius: 10px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    width: 30%;
+    font-size: 16px;
+    color: #1A3B6D;
+    text-align: center;
+}
+
+.nombre-testimonio{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.icono-testimonio{
+    width: 15%;
+    margin: auto;
+    margin-top: -110px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* SECCION DE SERVICIOS */
+
+#servicios{
+    background-color: #FEDEDC;
+    height: fit-content;
+}
+
+#container-servicios{
+    padding-top: 50px;
+    display: flex;
+    gap: 4%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicio{
+    text-align: center;
+    width: 20%;
+    padding-bottom: 30px;
+}
+
+.servicio img {
+    width: 50%;
+}
+
+.servicio h3{
+    font-size: small;
+    padding: 30px;
+    font-weight:600;
+}
+
+/* SECCION DE CONTACTO */
+
+#contacto{
+    padding: 0px;
+    padding-top: 60px;
+    height: fit-content;
+}
+
+.headliner{
+    text-align: center;
+    color: #1A3B6D;
+}
+
+#container-rosa{
+    background-color: #FEDEDC;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    height: 100%;
+}
+
+
+.container-info-de-contacto{
+    display: flex;
+    align-content: center;
+}
+
+.informacion-contacto{
+    width: 30%;
+}
+
+.parrafo{
+    text-decoration: dashed;
+    font-style: italic;
+}
+
+.parrafo2{
+    margin-left: 30px;
+}
+
+.info{
+    text-align: left;
+    color: #1A3B6D;
+    padding: 5px;
+    padding-bottom: 15px;
+
+}
+
+#boton-whatsapp, #boton-whatsapp-hadita{
+    background-color: #25D366;
+    border-color: #25D366;
+    border-radius: 25px;
+    color: white;
+}
+
+#boton-whatsapp-hadita{
+    font-size: 12px;
+    width: max-content;
+    position: relative;
+    right: 90px;
+    visibility: hidden;
+}
+
+
+#boton-whatsapp img, #boton-whatsapp-hadita img{
+    width: 30px;
+    padding-left: 5px;
+}
+
+#mapa-contacto{
+    background-color: #1A3B6D;
+    width: 40%;
+}
+
+#mapa-iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/*SECCION DE PROFESIONALES */
+
+#profesionales{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px;
+}
+
+.profesionales_img{
+    display: flex;
+}
+
+.profesionales_img img{
+    width: 350px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
+
+#doctora1-nombre{
+    background-color:#F9CAC7;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#doctora2-nombre{
+    background-color:#42BABFD9;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+@keyframes transformar-texto {
+    50%{
+        position: relative;
+        bottom: 0px
+    }
+    100%{
+        background-color: transparent;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+@keyframes disminuir-imagen {
+    100%{
+        width: 200px;
+    }
+    
+}
+
+.profesional-perfil:hover #doctora1-nombre{
+    animation-name: transformar-texto;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.profesional-perfil:hover #doctora2-nombre{
+    animation-name: transformar-texto;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.profesional-perfil:hover #doctora1{
+    animation-name: disminuir-imagen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.profesional-perfil:hover #doctora2{
+    animation-name: disminuir-imagen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#imgdoctora1 img{
+    background: rgba(254, 222, 220, 0.7); 
+    box-shadow: 5px 5px 18px rgba(254, 222, 220, 1);
+}
+
+#imgdoctora2 img{
+    background:rgba(195, 236, 236, 0.7);
+    box-shadow: 5px 5px 18px rgba(195, 236, 236, 1);
+}
+
+#imgdoctora1:hover{
+    animation-name: agrandar;
+    animation-duration: 0.7s; 
+    animation-fill-mode:forwards;    
+}
+
+#imgdoctora2:hover{
+    animation-name: agrandar2;
+    animation-duration: 0.7s; 
+    animation-fill-mode:forwards;    
+}
+
+
+.profesional-perfil{
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.profesional-texto{
+    text-align: center;
+    visibility: hidden;
+    padding: 15px;
+    font-size: 0px;
+}
+
+
+/* animacion */
+@keyframes agrandar {
+    0% {
+
+    }
+    100% {
+        /*transform: scale(1.5);*/
+        border-radius: 40% 40% 5% 5%;
+        background-color: #FEDEDC;        
+    }
+}
+    
+@keyframes agrandar2 {
+    0% {
+
+    }
+    100% {
+        /*transform: scale(1.5);*/
+        border-radius: 40% 40% 5% 5%;
+        background-color: #C3ECEC;        
+    }
+}
+
+
+/* FOOTER  */
+
+#footer{
+    padding: 20px;
+    padding-right: 90px;
+    padding-left: 90px;
+    background-color:#1A3B6D;
+    color: #FEDEDC;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+#footer img{
+    width: 60%;
+    
+}
+
+#turno img{
+    width: 0px;
+    
+}
+
+#siguenos img{
+    width: 30px;
+    margin-right: 60px;
+}
+
+#tarjetas img{
+    width: 70px;
+}
+
+#siguenos{
+    width: 20%;
+}
+
+
+@media (min-width:811px) and (max-width: 1024px){
+
+    .informacion-contacto{
+        width: 40%;
+    }
+
+    #nosotros{
+        display: inline-block;
+    }
+
+    #testimonios-container{
+        flex-wrap: wrap;
+    }
+
+    .icono-testimonio{
+        width: 25%;
+        margin: auto;
+        margin-top: -110px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    #container-servicios{
+        flex-wrap: wrap;
+    }
+
+    .servicio{
+        width: 40%;
+    }
+    
+    .servicio img {
+        width: 60%;
+    }
+
+    .carousel-item img{
+        height: inherit;
+    }
+    .profesionales_img img{
+        width: 250px;
+    }
+
+    .profesional-perfil{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 560px){
+
+    .navbar-brand{
+        margin-left: 10px !important;
+    }
+    .seccion{
+        display: inline-block;
+        height: fit-content;
+    }
+
+    .seccion h2{
+        padding-bottom: 10px;
+    }
+    .headliner{
+        padding-bottom: 10px;
+    }
+
+    #header-nosotros{
+        padding-top: 1px;
+        padding-bottom: 15px;
+    }
+
+    .nosotros-texto p{
+        text-align: center;
+        width: 90%;
+    }
+
+    #nosotros-contenido{
+        display: inline-block;
+    }
+
+    #nosotros-imagenes{
+        height: 300px;
+    }
+
+    #testimonios-container{
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+
+    .testimonio{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .nosotros-texto, #nosotros-imagenes{
+        width: 100%;
+    }
+
+    .nosotros-texto p{
+        width: 100%;
+    }
+
+    #nosotros-imagenes img{
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    
+    #container-servicios{
+        display: inline-block;
+    }
+    
+    .servicio{
+        width: 100%;
+    }
+    
+    .servicio img {
+        width: 80%;
+    }
+
+    .informacion-contacto{
+        width: 100%;
+    }
+
+    #contacto{
+        padding-bottom: 0px;
+    }
+
+    #container-rosa{
+        flex-wrap: wrap;
+    }
+
+    #mapa-contacto{
+        width: 90%;
+    }
+
+    #siguenos{
+        width: 60%;
+    }
+
+    #footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #turno, #siguenos, #tarjetas{
+        width: 400px;
+    }
+
+    #turno img{
+        width: 30%;
+    }
+
+    #turno{
+        display: flex;
+    }
+
+    #logo-footer img{
+        width: 0px;
+    }
+
+    #container-hadita{
+        width: 30%;
+    }
+
+
+    .carousel-item img{
+        height: inherit;
+    }
+
+    .profesionales_img{
+        display: block;
+    }
+
+    .profesionales_img img{
+        width: 250px;
+    }
+
+    .profesional-perfil{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
